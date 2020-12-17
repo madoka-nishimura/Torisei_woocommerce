@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+.privacy__wrap {
+    width: 800px;
+    padding: 0 15px;
+    margin: 0 auto 158px;
+}
+
+@media screen and (max-width:736px) {
+    .privacy__wrap {
+        width: 89.33333333333333vw;
+        padding: 0;
+        margin: 3vw auto 16vw
+    }
+}
+
+.privacy h3 {
+    margin-top: 4%;
+    margin-bottom: .7%;
+    font-size: 2em;
+    line-height: 1.9;
+    font-weight: 700;
+    color: #040000;
+}
+
+.privacy p:last-of-type {
+    margin-top: 4%
+}
+
+.privacy a {
+    pointer-event: none;
+    cursor: default;
+}
+
+@media screen and (max-width:736px) {
+    .privacy a {
+        pointer-event: auto;
+        cursor: auto
+    }
+}

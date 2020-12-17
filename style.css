@@ -1,0 +1,260 @@
+/*
+ Theme Name:   Storefront-child
+ Theme URI:    https://woocommerce.com/storefront/
+ Template:     Storefront
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  https://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  storefront
+ Tags:         e-commerce, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready, rtl-language-support, footer-widgets, sticky-post, theme-options, editor-style
+*/
+
+@import url('assets/css/common.css');
+
+/*リセット*/
+dfn {
+  font-style: normal; }
+
+h1 {
+  font-size: inherit;
+  margin: 0; }
+
+body,
+button,
+input,
+textarea {
+  color: inherit;
+  font-family: 'Open Sans', '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;;
+  font-size: 10px;
+  line-height: 1;
+  font-feature-settings: 'palt'
+  text-rendering: optimizeLegibility;
+  font-weight: normal; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+  clear: both;
+  margin: 0;
+  color: inherit; }
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a {
+    font-weight: normal; }
+
+h1,
+.alpha {
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: 0; }
+
+h2,
+.beta {
+  font-size: inherit;
+  line-height: inherit; }
+  h2 + h3,
+  .beta + h3 {
+    border-top: 0;
+    padding-top: 0; }
+
+h3,
+.gamma {
+  font-size: inherit; }
+
+h4,
+.delta {
+  font-size: inherit; }
+
+p + h2,
+p + header h2,
+p + h3,
+p + h4,
+ul + h2,
+ul + header h2,
+ul + h3,
+ul + h4,
+ol + h2,
+ol + header h2,
+ol + h3,
+ol + h4,
+table + h2,
+table + header h2,
+table + h3,
+table + h4,
+blockquote + h2,
+blockquote + header h2,
+blockquote + h3,
+blockquote + h4,
+form + h2,
+form + header h2,
+form + h3,
+form + h4 {
+  margin-top: 0; }
+
+p {
+  margin: 0; }
+
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+ol {
+  list-style: none; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 0; }
+
+dfn,
+cite,
+em,
+i {
+  font-style: normal; }
+
+blockquote {
+  padding: 0;
+  border-left: 0;
+  font-style: normal; }
+
+address {
+  margin: 0; }
+
+pre {
+  background: none;
+  font-family: inherit;
+  margin-bottom: 0;
+  padding: 0;
+  overflow: auto;
+  max-width: inherit; }
+
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 0; }
+
+/**
+ * Header
+ */
+.site-header {
+  background-color: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: inherit;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+  border-bottom: 0; }
+  .site-header .site-logo-anchor,
+  .site-header .site-logo-link,
+  .site-header .custom-logo-link {
+    display: block;
+    margin-bottom: 0; }
+    .site-header .site-logo-anchor img,
+    .site-header .site-logo-link img,
+    .site-header .custom-logo-link img {
+      width: 100%;
+      max-width: initial; }
+  .site-header .widget {
+    margin-bottom: 0; }
+
+/**
+ * Clearing
+ */
+.clear::before, .clear::after,
+.entry-content::before,
+.entry-content::after,
+.comment-content::before,
+.comment-content::after,
+.site-header::before,
+.site-header::after,
+.site-content::before,
+.site-content::after,
+.site-footer::before,
+.site-footer::after {
+  content: '';
+  display: inherit; }
+
+/**
+ * Strictly Layout Styles
+ */
+.col-full {
+    max-width: initial;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    box-sizing: border-box; }
+.right-sidebar .content-area {
+    width: 100%;
+    float: none;
+    margin-right: 0; }
+.right-sidebar .widget-area {
+    width:100%;
+    float: none;
+    margin-right: 0; }
+
+
+
+/*-----------------------
+ * woocommerce.css
+ -----------------------*/
+.storefront-breadcrumb {
+    width: 1000px;
+    padding: 0 15px;
+    margin: 0 auto 54px;
+}
+@media screen and (max-width:736px){
+  .storefront-breadcrumb {
+    display: none;
+  }
+}
+.woocommerce-breadcrumb {
+    font-size: 14px;
+    font-weight: bold;
+}
+.woocommerce-breadcrumb a {
+    text-decoration: none;
+    color: inherit;
+}
+.woocommerce-breadcrumb a:first-of-type {
+    position: relative;
+    padding-left: 21px;
+}
+.woocommerce-breadcrumb a:first-of-type:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: -2px;
+    left: 0;
+    width: 16px;
+    height: 15px;
+    margin: auto;
+    background-image: url("images/common/bread_1.svg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+.woocommerce-breadcrumb .breadcrumb-separator:after {
+  color: #000;
+  opacity: 1;
+}
+
